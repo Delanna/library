@@ -111,29 +111,52 @@ input{
 }
 
 .book{
-  background-color:deeppink;
-  color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color:white;
+  color: black;
   padding:0.5rem;
-  border-left:1rem solid #6c1199;
+  border-left:1.5rem solid mediumorchid;
   border-top-right-radius: 8px;
   border-bottom-right-radius:8px;
-  width: 120px;
-  height: fit-content;
+  width: 140px;
+  height: 200px;
   margin:20px;
   box-shadow: 1px 1px 6px grey;
 }
 
+.book h2{
+  margin-bottom: 0;
+  flex: 1fr;
+  font-size:medium;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.book h4{
+  margin-top: 2px;
+  margin-bottom: 0;
+  flex:1fr;
+  font-size: small;
+  text-align: center;
+  word-wrap: break-word;
+}
+
 .book-btns{
+  flex:1fr;
   width:fit-content;
   margin-left: auto;
 }
 
 .fa-regular{
-  color:#6c1199;
+  color: deeppink;
+  font-size: large;
+  margin-left: 6px;
 }
 
 .fa-regular:hover{
-  color: pink;
+  color: mediumorchid;
 }
 
 .fa-regular:active{
